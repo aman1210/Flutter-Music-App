@@ -1,8 +1,9 @@
 # Flutter-Music-App
 Flutter Music Player - Material design music player with audio plugin to play network music files.
 
+## Screenshots
 
-# How to use these ﬁles 
+## How to use these ﬁles 
 The attached ﬁles do NOT work as a standalone project. 
 
 If you want to run the code follow these steps 

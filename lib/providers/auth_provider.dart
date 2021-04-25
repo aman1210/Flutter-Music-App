@@ -34,8 +34,7 @@ class Auth with ChangeNotifier {
 
   Future<void> signup(String email, String password) async {
     try {
-      final url =
-          "http://soulmusic-env.eba-rkv4vduy.us-east-2.elasticbeanstalk.com/api/users/signup";
+      final url = "https://soulmusic-backend.herokuapp.com/api/users/signup";
       final response = await http.post(
         url,
         body: {
@@ -105,8 +104,7 @@ class Auth with ChangeNotifier {
 
   Future<void> login(String email, String password) async {
     try {
-      final url =
-          "http://soulmusic-env.eba-rkv4vduy.us-east-2.elasticbeanstalk.com/api/users/login";
+      final url = "https://soulmusic-backend.herokuapp.com/api/users/login";
       final response = await http.post(
         url,
         body: {

@@ -42,8 +42,7 @@ class Songs with ChangeNotifier {
   }
 
   Future<void> fetchAndSetSongs() async {
-    var url =
-        'http://soulmusic-env.eba-rkv4vduy.us-east-2.elasticbeanstalk.com/api/songs';
+    var url = 'https://soulmusic-backend.herokuapp.com/api/songs';
     try {
       final response = await http.get(url);
       // print(json.decode(response.body));

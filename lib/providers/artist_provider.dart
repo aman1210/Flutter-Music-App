@@ -25,8 +25,7 @@ class Artists with ChangeNotifier {
   }
 
   Future<void> fetchAndSetArtists() async {
-    var url =
-        "http://soulmusic-env.eba-rkv4vduy.us-east-2.elasticbeanstalk.com/api/artists";
+    var url = "https://soulmusic-backend.herokuapp.com/api/artists";
     try {
       final response = await http.get(url);
       final extractedData = json.decode(response.body) as Map<String, dynamic>;
